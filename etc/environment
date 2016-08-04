@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export REFIRER_HOME=$HOME/refirer
+export PATH=$REFIRER_HOME/bin:$PATH
+export PYTHONPATH=$REFIRER_HOME/src:$PYTHONPATH
+export refirer_colouring=on
+export refirer_backing=dark

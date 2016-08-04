@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+
+import sys
+from view import shower
+from model import context, validator, finder, previewer, replacer
+
+validator.validate (sys.argv)
+
+if context.command == context.commands [0]: finder.find ()
+elif context.command == context.commands [1]: previewer.preview ()
+elif context.command == context.commands [2]: replacer.replace ()
+else:
+    print (context.message)
+    print ('Usage: reef base roi regex [token [@]]')
+    print ('where roi is one or more of: dflkpt')
+    print ('matching respectively: directories, files, lines, links, pipes, targets')
